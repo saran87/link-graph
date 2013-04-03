@@ -1,0 +1,10 @@
+<div class="widget">
+    <h3>{{title}}</h3>
+    <div class="list">
+        <ul>
+            <li ng-repeat="link in links | filter:title">
+                <a href="{{link.link}}" title="{{link.name}}"> {{link.name}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
